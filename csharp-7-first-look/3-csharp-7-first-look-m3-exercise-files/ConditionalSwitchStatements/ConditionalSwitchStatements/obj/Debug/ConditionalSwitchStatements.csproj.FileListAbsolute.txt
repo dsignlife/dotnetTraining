@@ -1,0 +1,6 @@
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\bin\Debug\ConditionalSwitchStatements.exe.config
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\bin\Debug\ConditionalSwitchStatements.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\bin\Debug\ConditionalSwitchStatements.pdb
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\obj\Debug\ConditionalSwitchStatements.csprojResolveAssemblyReference.cache
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\obj\Debug\ConditionalSwitchStatements.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\ConditionalSwitchStatements\ConditionalSwitchStatements\obj\Debug\ConditionalSwitchStatements.pdb

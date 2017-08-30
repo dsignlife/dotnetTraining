@@ -1,0 +1,7 @@
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\bin\Debug\Deconstruction.exe.config
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\bin\Debug\Deconstruction.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\bin\Debug\Deconstruction.pdb
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\bin\Debug\System.ValueTuple.dll
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\obj\Debug\Deconstruction.csprojResolveAssemblyReference.cache
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\obj\Debug\Deconstruction.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Deconstruction\Deconstruction\obj\Debug\Deconstruction.pdb

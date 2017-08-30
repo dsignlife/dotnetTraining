@@ -1,0 +1,7 @@
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\bin\Debug\SLibrary.exe.config
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\bin\Debug\SLibrary.exe
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\bin\Debug\SLibrary.pdb
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\obj\Debug\SLibrary.exe
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\obj\Debug\SLibrary.pdb
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\obj\Debug\SLibrary.csprojResolveAssemblyReference.cache
+C:\Users\TomzPC\Source\Workspaces\dotnetTraining\SLibrary\SLibrary\obj\Debug\SLibrary.csproj.CoreCompileInputs.cache

@@ -1,0 +1,7 @@
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\bin\Debug\LocalFunctions.exe.config
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\bin\Debug\LocalFunctions.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\bin\Debug\LocalFunctions.pdb
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\bin\Debug\System.ValueTuple.dll
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\obj\Debug\LocalFunctions.csprojResolveAssemblyReference.cache
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\obj\Debug\LocalFunctions.exe
+c:\users\jesse\Dropbox\pluralsight\C#7 Demos\LocalFunctions\LocalFunctions\obj\Debug\LocalFunctions.pdb
