@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\aspdotnetcore-efcore-bootstrap-angular-web-app",
+    "\\aspdotnetcore-efcore-bootstrap-angular-web-app\\04-javascript",
+    "\\aspdotnetcore-efcore-bootstrap-angular-web-app\\04-javascript\\m03",
+    "\\aspdotnetcore-efcore-bootstrap-angular-web-app\\04-javascript\\m03\\After"
   ],
+  "SelectedNode": "\\aspdotnetcore-efcore-bootstrap-angular-web-app\\04-javascript\\m03\\After\\TheWorld.sln",
   "PreviewInSolutionExplorer": false
 }
