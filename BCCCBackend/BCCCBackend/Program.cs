@@ -12,7 +12,7 @@ namespace BCCCBackend
     {
         static void Main(string[] args)
         {
-
+            DB.GetConnect();
             reader2();
             
         }
@@ -49,11 +49,11 @@ namespace BCCCBackend
 
             var prop = new Prop();
             prop.Name = testList[0];
-            prop.Rate = Convert.ToDouble(testList[1], culture); 
+            prop.Rate = Convert.ToDecimal(testList[1], culture); 
             prop.Date = testList[2];
             prop.Time = testList[3];
-            prop.Ask = Convert.ToDouble(testList[4], culture);
-            prop.Bid = Convert.ToDouble(testList[5], culture);
+            prop.Ask = Convert.ToDecimal(testList[4], culture);
+            prop.Bid = Convert.ToDecimal(testList[5], culture);
 
             
             Console.WriteLine($"{prop.Name} \n" +
