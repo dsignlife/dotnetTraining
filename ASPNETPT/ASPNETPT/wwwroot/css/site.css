@@ -45,6 +45,11 @@ input[type=text],[type=password],textarea
 .menu li.acive {
     font-weight: bold;
 }
+
+.menu li.a {
+    color: #eee;
+}
+
 #sidebar {
     background-color: grey;
     color: darkgray;
@@ -55,6 +60,17 @@ input[type=text],[type=password],textarea
     left: 0;
     margin: 0;
 }
+#sidebar.hide-sidebar {
+
+    left: -250px;
+    transition: left ease .25s;
+    
+}
+
 #wrapper {
     margin: 0 0 0 250px;
+}
+#wrapper.hide-sidebar {
+    margin-left: 0;
+    transition: margin-left ease .25s;
 }
