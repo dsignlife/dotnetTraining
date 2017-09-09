@@ -45,6 +45,12 @@
     <Compile Include="d1.cs" />
     <Compile Include="d2.cs" />
     <Compile Include="d3.cs" />
+    <Compile Include="d4.cs" />
+    <Compile Include="d5.cs" />
+    <Compile Include="d6.cs" />
+    <Compile Include="d7.cs" />
+    <Compile Include="d8.cs" />
+    <Compile Include="d9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
