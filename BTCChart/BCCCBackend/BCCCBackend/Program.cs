@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Data;
+using System.Data.SqlClient;
 using static System.Console;
 
 namespace BCCCBackend
@@ -14,13 +15,36 @@ namespace BCCCBackend
     {
         static void Main(string[] args)
         {
-            DB.GetConnect();
-            //DB.Show();
-            BtcGetStock();
-            
-        }
+           
+            int choice = 0;
+           
+            while (choice == 0 || choice ==1)
+            {
+                
+                
+                if (choice == 0)
+                {
+                    var timer = new System.Threading.Timer(e => DB.Update(DB.GetConnect(), BtcGetStock()), null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+                    choice = Convert.ToInt32(ReadLine());
+                }
 
-        public static void BtcGetStock()
+
+                else if (choice == 1)
+                {
+                    DB.Update(DB.GetConnect(), BtcGetStock());
+                    choice = Convert.ToInt32(ReadLine());
+                }
+
+                else
+                {
+                    Environment.Exit(0);
+                }
+                
+            }
+
+            }
+
+        public static BtcProp BtcGetStock()
         {
             var testList = new List<string>();
             var culture = CultureInfo.InvariantCulture;
@@ -36,7 +60,6 @@ namespace BCCCBackend
 
 
                     case XmlNodeType.Text: //Display the text in each element.
-                        Console.WriteLine(reader.Value);
                         testList.Add(reader.Value);
                         break;
 
@@ -46,9 +69,6 @@ namespace BCCCBackend
 
                 }
             }
-
-            WriteLine("Object in the list"
-                + "\n##################");
 
             var prop = new BtcProp
             {
@@ -62,17 +82,12 @@ namespace BCCCBackend
 
 
 
-            WriteLine($"{prop.Name} \n" +
-                              $"{prop.Rate} \n" +
-                              $"{prop.Date} \n" +
-                              $"{prop.Time} \n" +
-                              $"{prop.Ask} \n" +
-                              $"{prop.Bid}");
-
-            
-            
+            WriteLine($"{prop.Name} {prop.Rate} {prop.Date} {prop.Time} {prop.Ask} {prop.Bid} ADDED");
 
 
+
+
+            return prop;
         }
 
 

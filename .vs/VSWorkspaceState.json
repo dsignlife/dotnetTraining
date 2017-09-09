@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BTCChart",
+    "\\BTCChart\\BCCCBackend"
   ],
-  "SelectedNode": "\\SLibrary",
+  "SelectedNode": "\\BTCChart\\BCCCBackend\\BCCCBackend.sln",
   "PreviewInSolutionExplorer": false
 }

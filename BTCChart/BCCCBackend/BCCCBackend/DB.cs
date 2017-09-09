@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Linq;
 using System.Data.SqlClient;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace BCCCBackend
               @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BTCBack;Data Source = localhost\SQLEXPRESS";
             SqlConnection connection = new SqlConnection(cs);
             connection.Open();
-            WriteLine("Connecting established");
+            Write("Connecting established : ");
 
 
             
@@ -34,14 +35,21 @@ namespace BCCCBackend
            
         }
 
-        public static void Update(SqlConnection connection)
+        public static void Update(SqlConnection connection, BtcProp data)
                 
         {
 
-            WriteLine("Exucuting Query");
-            string query = "";
-            SqlCommand command = new SqlCommand(query, connection);
-            
+            string sql = "INSERT INTO BTC(Name,Rate,Date,Time,Ask,Bid) VALUES(@name,@rate,@date,@time,@ask,@bid)";
+            SqlCommand cmd = new SqlCommand(sql, connection);
+
+            cmd.Parameters.AddWithValue("@name", data.Name);
+            cmd.Parameters.AddWithValue("@rate", data.Rate);
+            cmd.Parameters.AddWithValue("@date", data.Date);
+            cmd.Parameters.AddWithValue("@time", data.Time);
+            cmd.Parameters.AddWithValue("@ask", data.Ask);
+            cmd.Parameters.AddWithValue("@bid", data.Bid);
+            cmd.CommandType = CommandType.Text;
+            cmd.ExecuteNonQuery();
 
 
             connection.Close();
