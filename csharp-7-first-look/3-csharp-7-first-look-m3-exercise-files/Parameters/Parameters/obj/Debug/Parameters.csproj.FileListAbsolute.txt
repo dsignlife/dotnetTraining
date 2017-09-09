@@ -1,6 +1,0 @@
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\bin\Debug\Parameters.exe.config
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\bin\Debug\Parameters.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\bin\Debug\Parameters.pdb
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\obj\Debug\Parameters.csprojResolveAssemblyReference.cache
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\obj\Debug\Parameters.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Parameters\Parameters\obj\Debug\Parameters.pdb

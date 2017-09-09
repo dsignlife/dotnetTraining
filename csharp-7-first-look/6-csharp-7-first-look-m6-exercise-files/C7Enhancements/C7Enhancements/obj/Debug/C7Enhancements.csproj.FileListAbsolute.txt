@@ -1,5 +1,0 @@
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\C7Enhancements\C7Enhancements\bin\Debug\C7Enhancements.exe.config
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\C7Enhancements\C7Enhancements\bin\Debug\C7Enhancements.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\C7Enhancements\C7Enhancements\bin\Debug\C7Enhancements.pdb
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\C7Enhancements\C7Enhancements\obj\Debug\C7Enhancements.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\C7Enhancements\C7Enhancements\obj\Debug\C7Enhancements.pdb

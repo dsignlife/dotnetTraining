@@ -1,5 +1,0 @@
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\OutVariables\OutVariables\bin\Debug\OutVariables.exe.config
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\OutVariables\OutVariables\bin\Debug\OutVariables.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\OutVariables\OutVariables\bin\Debug\OutVariables.pdb
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\OutVariables\OutVariables\obj\Debug\OutVariables.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\OutVariables\OutVariables\obj\Debug\OutVariables.pdb

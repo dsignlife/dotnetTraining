@@ -1,7 +1,0 @@
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\bin\Debug\Tuples.exe.config
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\bin\Debug\Tuples.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\bin\Debug\Tuples.pdb
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\bin\Debug\System.ValueTuple.dll
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\obj\Debug\Tuples.csprojResolveAssemblyReference.cache
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\obj\Debug\Tuples.exe
-c:\users\jesse\Dropbox\pluralsight\C#7 Demos\Tuples\Tuples\obj\Debug\Tuples.pdb

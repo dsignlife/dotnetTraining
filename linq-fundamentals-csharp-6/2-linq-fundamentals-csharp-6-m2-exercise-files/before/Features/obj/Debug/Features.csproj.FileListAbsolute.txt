@@ -1,7 +1,0 @@
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\bin\Debug\Features.exe.config
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\bin\Debug\Features.exe
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\bin\Debug\Features.pdb
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\obj\Debug\Features.csproj.CoreCompileInputs.cache
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\obj\Debug\Features.exe
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\obj\Debug\Features.pdb
-C:\Users\TomzPC\Source\Workspaces\dotnetTraining\linq-fundamentals-csharp-6\2-linq-fundamentals-csharp-6-m2-exercise-files\before\Features\obj\Debug\Features.csprojResolveAssemblyReference.cache
