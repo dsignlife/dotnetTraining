@@ -1,17 +1,11 @@
 ﻿@{
 ViewBag.Title = "Home Page";
-Layout = "_Layout";
-
-
-
 }
-
 
     <h3>Coin stats</h3>
     <p>BTC</p>
 
     <form>
-
         <div>
             <label>INPUT1</label>
             <input/>
@@ -22,6 +16,13 @@ Layout = "_Layout";
 
         <div>
             <input type="submit" value="Add">
+        </div>
+        
+        <p>CandleChart</p>
+        <div id="candle" style="width: 900px; height: 500px;">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript" src="js/candlestick.js"></script>
+
         </div>
     </form>
 

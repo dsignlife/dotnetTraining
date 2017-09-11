@@ -12,6 +12,8 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "Key": "Value",
+        "MainSettings__ToAdress": "test@test.com",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
