@@ -39,7 +39,7 @@ namespace BCCCBackend
                 
         {
 
-            string sql = "INSERT INTO BTC(Name,Rate,Date,Time,Ask,Bid) VALUES(@name,@rate,@date,@time,@ask,@bid)";
+            string sql = "INSERT INTO Btcs(Name,Rate,Date,Time,Ask,Bid) VALUES(@name,@rate,@date,@time,@ask,@bid)";
             SqlCommand cmd = new SqlCommand(sql, connection);
 
             cmd.Parameters.AddWithValue("@name", data.Name);

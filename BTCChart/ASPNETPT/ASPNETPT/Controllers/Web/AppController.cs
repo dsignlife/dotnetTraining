@@ -8,6 +8,7 @@ using ASPNETPT.Models;
 using ASPNETPT.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace ASPNETPT.Controllers.Web
 {
@@ -16,20 +17,33 @@ namespace ASPNETPT.Controllers.Web
     {
         private IMailService _mailService;
         private IConfigurationRoot _config;
-        //private IBtcData _context;
+        private IBtcRepo _repo;
+        private ILogger<AppController> _logger;
 
 
-        public AppController(IMailService mailService, IConfigurationRoot config)
+        public AppController(IMailService mailService, IConfigurationRoot config, IBtcRepo repo, ILogger<AppController> logger)
        {
            _mailService = mailService;
            _config = config;
-           //_context = context;
+            _repo = repo;
+           _logger = logger;
        }
         public IActionResult Index()
         {
-            //var data = _context.GetBtcs();
+            try
+            {
+                var data = _repo.GetBtCprops().ToList();
 
-            return View();
+                return View(data);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError($"Failed: {e.Message}");
+                return Redirect("/error");
+
+            }
+          
+
         }
 
         public IActionResult Contact()

@@ -24,7 +24,7 @@ namespace BCCCBackend
                 
                 if (choice == 0)
                 {
-                    var timer = new System.Threading.Timer(e => DB.Update(DB.GetConnect(), BtcGetStock()), null, TimeSpan.Zero, TimeSpan.FromMinutes(1));
+                    var timer = new System.Threading.Timer(e => DB.Update(DB.GetConnect(), BtcGetStock()), null, TimeSpan.Zero, TimeSpan.FromMinutes(5));
                     choice = Convert.ToInt32(ReadLine());
                 }
 
@@ -73,11 +73,11 @@ namespace BCCCBackend
             var prop = new BtcProp
             {
                 Name = testList[0],
-                Rate = Convert.ToDecimal(testList[1], culture),
+                Rate = Convert.ToDouble(testList[1], culture),
                 Date = testList[2],
                 Time = testList[3],
-                Ask = Convert.ToDecimal(testList[4], culture),
-                Bid = Convert.ToDecimal(testList[5], culture)
+                Ask = Convert.ToDouble(testList[4], culture),
+                Bid = Convert.ToDouble(testList[5], culture)
             };
 
 

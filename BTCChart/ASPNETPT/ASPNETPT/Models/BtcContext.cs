@@ -8,11 +8,11 @@ using Microsoft.Extensions.Configuration;
 
 namespace ASPNETPT.Models
 {
-    public class Connector : DbContext
+    public class BtcContext : DbContext
         {
         private IConfigurationRoot _config;
 
-        public Connector(IConfigurationRoot config, DbContextOptions options) : base(options)
+        public BtcContext(IConfigurationRoot config, DbContextOptions options) : base(options)
         {
             _config = config;
         }

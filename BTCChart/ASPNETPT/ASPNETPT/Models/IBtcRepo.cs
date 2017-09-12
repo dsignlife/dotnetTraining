@@ -2,8 +2,8 @@
 
 namespace ASPNETPT.Models
 {
-    public interface IBtcData
+    public interface IBtcRepo
     {
-        IEnumerable<BtCprop> GetBtcs();
+        IEnumerable<BtCprop> GetBtCprops();
     }
 }

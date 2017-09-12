@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 
 namespace ASPNETPT
@@ -42,20 +43,28 @@ namespace ASPNETPT
             {
                 
             }
-            services.AddDbContext<Connector>();
-           // services.AddScoped<BtcData>();
-           // services.AddTransient<BtcData>();
+            services.AddDbContext<BtcContext>();
+         
+            services.AddScoped<IBtcRepo, BtcRepo>();
+            services.AddTransient<BtcContextData>();
+
+            services.AddLogging();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, BtcContextData seedData, ILoggerFactory factory)
         {
             
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                factory.AddDebug(LogLevel.Information);
+            }
+            else
+            {
+                factory.AddDebug(LogLevel.Error);
             }
 
             
@@ -69,7 +78,8 @@ namespace ASPNETPT
                     );
                 }
         );
-            
+
+            //seedData.seedData().Wait();
 
         }
     }
