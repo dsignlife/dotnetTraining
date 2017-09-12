@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ASPNETPT.Controllers.Web.Services;
+using ASPNETPT.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -41,12 +42,17 @@ namespace ASPNETPT
             {
                 
             }
+            services.AddDbContext<Connector>();
+           // services.AddScoped<BtcData>();
+           // services.AddTransient<BtcData>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -63,7 +69,8 @@ namespace ASPNETPT
                     );
                 }
         );
+            
 
-    }
+        }
     }
 }

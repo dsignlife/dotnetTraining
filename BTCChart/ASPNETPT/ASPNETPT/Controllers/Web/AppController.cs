@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ASPNETPT.Controllers.Web.Services;
+using ASPNETPT.Models;
 using ASPNETPT.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -15,14 +16,19 @@ namespace ASPNETPT.Controllers.Web
     {
         private IMailService _mailService;
         private IConfigurationRoot _config;
+        //private IBtcData _context;
+
 
         public AppController(IMailService mailService, IConfigurationRoot config)
        {
            _mailService = mailService;
            _config = config;
+           //_context = context;
        }
         public IActionResult Index()
         {
+            //var data = _context.GetBtcs();
+
             return View();
         }
 

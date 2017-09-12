@@ -1,18 +1,4 @@
-﻿/*#main {
-  background-color: whitesmoke;
-  padding: 4px;
-  margin: 0;
-}
-#footer {
-    background-color: darkgray;
-    color:gray;
-    padding: 8px 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}*/
-.face {
+﻿.face {
     max-width: 75px;
     border: 1px solid #222;
     padding: 3px;

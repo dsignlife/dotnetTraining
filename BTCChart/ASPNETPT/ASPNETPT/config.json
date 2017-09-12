@@ -1,5 +1,9 @@
 {
-	"MailSettings": {
-	  "ToAdress":  "test@test.com"
-	}
+  "MailSettings": {
+    "ToAdress": "test@test.com"
+  },
+  "ConnectionStrings": {
+    "BtcBackConnector": "Server=localhost; Database=BTCback; Trusted_Connection= true; MultipleActiveResultSets= true;" 
+  } 
+
 }
