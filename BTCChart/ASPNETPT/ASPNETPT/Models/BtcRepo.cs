@@ -12,6 +12,7 @@ namespace ASPNETPT.Models
         private BtcContext _context;
         private ILogger<BtcRepo> _logger;
 
+
         public BtcRepo(BtcContext context, ILogger<BtcRepo> logger)
         {
             _context = context;
@@ -21,6 +22,7 @@ namespace ASPNETPT.Models
         public IEnumerable<BtCprop> GetBtCprops()
         {
             _logger.LogInformation("Getting BTC DATA from the database");
+           
             return _context.Btcs.ToList();
         }
     }
