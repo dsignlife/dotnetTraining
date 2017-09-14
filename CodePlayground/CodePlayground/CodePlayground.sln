@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap2numbers", "Swap2number
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackjackGame", "BlackjackGame\BlackjackGame.csproj", "{62DC0DF3-3F37-40FF-B0DD-9DB8B3BC76FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCipherDEncryption", "CaesarCipherDEncryption\CaesarCipherDEncryption.csproj", "{2F6DA06E-BC67-4D6F-A1F8-5228E7C96F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{62DC0DF3-3F37-40FF-B0DD-9DB8B3BC76FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62DC0DF3-3F37-40FF-B0DD-9DB8B3BC76FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62DC0DF3-3F37-40FF-B0DD-9DB8B3BC76FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6DA06E-BC67-4D6F-A1F8-5228E7C96F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6DA06E-BC67-4D6F-A1F8-5228E7C96F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6DA06E-BC67-4D6F-A1F8-5228E7C96F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6DA06E-BC67-4D6F-A1F8-5228E7C96F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
