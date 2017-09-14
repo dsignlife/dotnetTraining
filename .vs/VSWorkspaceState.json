@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BTCChart",
     "\\BTCChart\\ASPNETPT",
     "\\BTCChart\\BCCCBackend",
-    "\\Pluralsight"
+    "\\Pluralsight",
+    "\\Pluralsight\\algorithms and datastructure",
+    "\\Pluralsight\\algorithms and datastructure\\ads-linked-list-exercise-files"
   ],
-  "SelectedNode": "\\BTCChart\\ASPNETPT\\ASPNETPT.sln",
+  "SelectedNode": "\\CodePlayground",
   "PreviewInSolutionExplorer": false
 }
