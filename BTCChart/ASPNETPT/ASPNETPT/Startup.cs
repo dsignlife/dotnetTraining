@@ -43,8 +43,8 @@ namespace ASPNETPT
             {
                 
             }
+
             services.AddDbContext<BtcContext>();
-         
             services.AddScoped<IBtcRepo, BtcRepo>();
             services.AddTransient<BtcContextData>();
 
@@ -53,7 +53,7 @@ namespace ASPNETPT
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, BtcContextData seedData, ILoggerFactory factory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory factory) //Add BtcContextData seedData to update to db
         {
             
 

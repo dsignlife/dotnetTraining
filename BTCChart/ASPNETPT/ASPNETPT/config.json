@@ -3,7 +3,7 @@
     "ToAdress": "test@test.com"
   },
   "ConnectionStrings": {
-    "BtcBackConnector": "Server=localhost; Database=BTCback; Trusted_Connection= true; MultipleActiveResultSets= true;" 
+    "BtcBackConnector": "Data Source=localhost;Initial Catalog=BTCback; MultipleActiveResultSets= true; User Id=sa; Password=tomz;" 
   } 
 
 }

@@ -2,13 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\BTCChart",
+    "\\BTCChart\\ASPNETPT",
     "\\BTCChart\\BCCCBackend",
-    "\\Pluralsight",
-    "\\Pluralsight\\aspdotnetcore-efcore-bootstrap-angular-web-app",
-    "\\Pluralsight\\aspdotnetcore-efcore-bootstrap-angular-web-app\\05-mvc-6",
-    "\\Pluralsight\\aspdotnetcore-efcore-bootstrap-angular-web-app\\05-mvc-6\\m04",
-    "\\Pluralsight\\aspdotnetcore-efcore-bootstrap-angular-web-app\\05-mvc-6\\m04\\After"
+    "\\Pluralsight"
   ],
-  "SelectedNode": "\\Pluralsight\\aspdotnetcore-efcore-bootstrap-angular-web-app\\05-mvc-6\\m04\\After\\TheWorld.sln",
+  "SelectedNode": "\\BTCChart\\ASPNETPT\\ASPNETPT.sln",
   "PreviewInSolutionExplorer": false
 }
