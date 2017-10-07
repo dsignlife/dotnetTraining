@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordGenerator", "PasswordGenerator\PasswordGenerator.csproj", "{8E68ED15-FCB5-45C6-814D-E2A4BE5AA499}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{196A32F7-6B29-454B-85EA-1839C4858B0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BandwidthChecker", "BandwidthChecker\BandwidthChecker.csproj", "{893637B3-A97B-4C06-BC06-A382D47B16C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLparsing", "XMLparsing\XMLparsing.csproj", "{6D48675F-ED84-4FCC-97C5-F3D1A7E6AAAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{893637B3-A97B-4C06-BC06-A382D47B16C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{893637B3-A97B-4C06-BC06-A382D47B16C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{893637B3-A97B-4C06-BC06-A382D47B16C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D48675F-ED84-4FCC-97C5-F3D1A7E6AAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D48675F-ED84-4FCC-97C5-F3D1A7E6AAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D48675F-ED84-4FCC-97C5-F3D1A7E6AAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D48675F-ED84-4FCC-97C5-F3D1A7E6AAAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
