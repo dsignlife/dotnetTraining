@@ -7,8 +7,9 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
+
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
+       
         try {
             int n = Integer.parseInt(in.readLine());
             for (int b = 0; b < n; b++) {
@@ -20,16 +21,18 @@ public class Main {
                     }
                 }
                 int moves = new AStar(new State(board)).shortestPath();
-                if (moves < 0 || moves > 10) {
-                    out.println("Unsolvable in less than 11 move(s).");
-                } else {
-                    out.printf("Solvable in %d move(s).\n", moves);
+                if (moves < 0 || moves > 10) 
+				{
+                    System.out.println("Unsolvable in less than 11 move(s).");
+                } 
+				else 
+				{
+                    System.out.printf("Solvable in %d move(s).\n", moves);
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        out.close();
     }
 }
 
