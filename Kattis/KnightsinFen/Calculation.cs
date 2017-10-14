@@ -8,7 +8,7 @@ namespace KnightsinFen
         /// <summary>
         /// Goal
         /// </summary>
-        private static readonly string[] End =
+        private static readonly string[] Goal =
     {
                         "11111",
                         "01111",
@@ -16,7 +16,6 @@ namespace KnightsinFen
                         "00001",
                         "00000"
         };
-
 
         public static int Solve(string[] board)
         {
@@ -30,7 +29,7 @@ namespace KnightsinFen
             {
                 var currentBoard = boardsToExplore.Dequeue();
 
-                if (IsEqualToEnd(currentBoard))
+                if (GoalEqualsTo(currentBoard))
                     return currentBoard.Option;
 
                 var currentBoardKey = string.Join(string.Empty, currentBoard);
@@ -43,12 +42,12 @@ namespace KnightsinFen
 
                 if (currentBoard.Option >= 10 || minimumTotalMoves >= 11) continue;
 
-                var emptySquare = currentBoard.EmptySpace;
-                var possibleMoves = ListAllKnightMoves(emptySquare);
+                var emptyPosition = currentBoard.EmptyPosition;
+                var possibleMoves = ListAllKnightMoves(emptyPosition);
 
                 for (int i = 0; i < possibleMoves.Count; i++)
                 {
-                    var newBoard = State(currentBoard, emptySquare, possibleMoves[i]);
+                    var newBoard = State(currentBoard, emptyPosition, possibleMoves[i]);
                     var newBoardKey = string.Join(string.Empty, newBoard);
                     if (!seenBoards.ContainsKey(newBoardKey))
                         boardsToExplore.Enqueue(new BoardOptions(newBoard.ToArray(), possibleMoves[i], currentBoard.Option + 1));
@@ -78,20 +77,20 @@ namespace KnightsinFen
         /// <summary>
         /// Lists all knight moves.
         /// </summary>
-        /// <param name="emptySquare">The empty square.</param>
+        /// <param name="emptyPosition">The empty position.</param>
         /// <returns></returns>
-        private static List<Position> ListAllKnightMoves(Position emptySquare)
+        private static List<Position> ListAllKnightMoves(Position emptyPosition)
         {
             var result = new List<Position>
             {
-                new Position(emptySquare.Row - 2, emptySquare.Column - 1),
-                new Position(emptySquare.Row - 2, emptySquare.Column + 1),
-                new Position(emptySquare.Row + 2, emptySquare.Column - 1),
-                new Position(emptySquare.Row + 2, emptySquare.Column + 1),
-                new Position(emptySquare.Row - 1, emptySquare.Column - 2),
-                new Position(emptySquare.Row - 1, emptySquare.Column + 2),
-                new Position(emptySquare.Row + 1, emptySquare.Column - 2),
-                new Position(emptySquare.Row + 1, emptySquare.Column + 2)
+                new Position(emptyPosition.Row - 2, emptyPosition.Column - 1),
+                new Position(emptyPosition.Row - 2, emptyPosition.Column + 1),
+                new Position(emptyPosition.Row + 2, emptyPosition.Column - 1),
+                new Position(emptyPosition.Row + 2, emptyPosition.Column + 1),
+                new Position(emptyPosition.Row - 1, emptyPosition.Column - 2),
+                new Position(emptyPosition.Row - 1, emptyPosition.Column + 2),
+                new Position(emptyPosition.Row + 1, emptyPosition.Column - 2),
+                new Position(emptyPosition.Row + 1, emptyPosition.Column + 2)
             };
 
             return result.Where(p => p.Row >= 0 &&
@@ -105,17 +104,17 @@ namespace KnightsinFen
         /// States the specified current board.
         /// </summary>
         /// <param name="currentBoard">The current board.</param>
-        /// <param name="emptySquare">The empty square.</param>
+        /// <param name="emptyPosition">The empty position.</param>
         /// <param name="move">The move.</param>
         /// <returns></returns>
-        private static string[] State(BoardOptions currentBoard, Position emptySquare, Position move)
+        private static string[] State(BoardOptions currentBoard, Position emptyPosition, Position move)
         {
             var newBoard = new string[5];
             currentBoard.CopyTo(newBoard);
 
-            var theRow = newBoard[emptySquare.Row].ToCharArray();
-            theRow[emptySquare.Column] = newBoard[move.Row][move.Column];
-            newBoard[emptySquare.Row] = new string(theRow);
+            var theRow = newBoard[emptyPosition.Row].ToCharArray();
+            theRow[emptyPosition.Column] = newBoard[move.Row][move.Column];
+            newBoard[emptyPosition.Row] = new string(theRow);
 
             theRow = newBoard[move.Row].ToCharArray();
             theRow[move.Column] = ' ';
@@ -137,7 +136,7 @@ namespace KnightsinFen
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    if (board[i][j] != End[i][j])
+                    if (board[i][j] != Goal[i][j])
                         counter++;
                 }
             }
@@ -149,15 +148,15 @@ namespace KnightsinFen
         /// </summary>
         /// <param name="board">The board.</param>
         /// <returns>
-        ///   <c>true</c> if [is equal to end] [the specified board]; otherwise, <c>false</c>.
+        ///   <c>true</c> if  [goal equals to] [the specified board]; otherwise, <c>false</c>.
         /// </returns>
-        private static bool IsEqualToEnd(IReadOnlyList<string> board)
+        private static bool GoalEqualsTo(IReadOnlyList<string> board)
         {
             for (int i = 0; i < 5; i++)
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    if (board[i][j] != End[i][j])
+                    if (board[i][j] != Goal[i][j])
                         return false;
                 }
             }

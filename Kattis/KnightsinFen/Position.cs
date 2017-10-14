@@ -3,7 +3,7 @@
     public class Position
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Position"/> class.
+        /// Initializes a new instance of the <see cref="Position" /> class.
         /// </summary>
         /// <param name="row">The row.</param>
         /// <param name="column">The column.</param>
