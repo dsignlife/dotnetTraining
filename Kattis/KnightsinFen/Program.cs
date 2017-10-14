@@ -58,7 +58,7 @@ namespace KnightsinFen
                 string[] currentBoard = board.Skip(i * 5).Take(5).ToArray();
                 result[i] = Calculation.Solve(currentBoard);
                 WriteLine(result[i] <= 10 ? $"Solvable in {result[i]} move(s)." : "Unsolvable in less than 11 move(s).");
-                WriteLine(sw.Elapsed + "ms");
+                WriteLine(sw.Elapsed + "s");
             }
          
         }

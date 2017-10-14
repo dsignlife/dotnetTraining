@@ -17,6 +17,11 @@ namespace KnightsinFen
                         "00000"
         };
 
+        /// <summary>
+        /// Solves the specified board.
+        /// </summary>
+        /// <param name="board">The board.</param>
+        /// <returns></returns>
         public static int Solve(string[] board)
         {
             var boardsToExplore = new Queue<BoardOptions>();
@@ -75,6 +80,46 @@ namespace KnightsinFen
         }
 
         /// <summary>
+        /// Determines whether [is equal to end] [the specified board].
+        /// </summary>
+        /// <param name="board">The board.</param>
+        /// <returns>
+        ///   <c>true</c> if  [goal equals to] [the specified board]; otherwise, <c>false</c>.
+        /// </returns>
+        private static bool GoalEqualsTo(IReadOnlyList<string> board)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (board[i][j] != Goal[i][j])
+                        return false;
+                }
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Heuristics the specified board.
+        /// </summary>
+        /// <param name="board">The board.</param>
+        /// <returns></returns>
+        private static int Heuristic(IReadOnlyList<string> board)
+        {
+            var counter = 0;
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (board[i][j] != Goal[i][j])
+                        counter++;
+                }
+            }
+            return counter;
+        }
+
+        /// <summary>
         /// Lists all knight moves.
         /// </summary>
         /// <param name="emptyPosition">The empty position.</param>
@@ -121,46 +166,6 @@ namespace KnightsinFen
             newBoard[move.Row] = new string(theRow);
 
             return newBoard;
-        }
-
-        /// <summary>
-        /// Heuristics the specified board.
-        /// </summary>
-        /// <param name="board">The board.</param>
-        /// <returns></returns>
-        private static int Heuristic(IReadOnlyList<string> board)
-        {
-            var counter = 0;
-
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    if (board[i][j] != Goal[i][j])
-                        counter++;
-                }
-            }
-            return counter;
-        }
-
-        /// <summary>
-        /// Determines whether [is equal to end] [the specified board].
-        /// </summary>
-        /// <param name="board">The board.</param>
-        /// <returns>
-        ///   <c>true</c> if  [goal equals to] [the specified board]; otherwise, <c>false</c>.
-        /// </returns>
-        private static bool GoalEqualsTo(IReadOnlyList<string> board)
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    if (board[i][j] != Goal[i][j])
-                        return false;
-                }
-            }
-            return true;
         }
     }
 }
