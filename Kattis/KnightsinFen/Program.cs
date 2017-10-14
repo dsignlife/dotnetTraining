@@ -9,6 +9,7 @@ namespace KnightsinFen
     public static class Program
     {
         private static int _testcases;
+        //private static int  result;
         private static Stopwatch sw;
 
         /// <summary>
@@ -26,6 +27,7 @@ namespace KnightsinFen
                 {
                     _testcases = int.Parse(line);
                     string[] boards = new string[_testcases * 5];
+                    
 
                     for (int i = 0; i < _testcases * 5; i++)
                     {
@@ -51,13 +53,12 @@ namespace KnightsinFen
         /// <returns></returns>
         private static void SplitBoard(string[] board)
         {
-            int[] result = new int[_testcases];
 
             for (int i = 0; i < _testcases; i++)
             {
                 string[] currentBoard = board.Skip(i * 5).Take(5).ToArray();
-                result[i] = Calculation.Solve(currentBoard);
-                WriteLine(result[i] <= 10 ? $"Solvable in {result[i]} move(s)." : "Unsolvable in less than 11 move(s).");
+                int result = Calculation.Solve(currentBoard);
+                WriteLine(result <= 10 ? $"Solvable in {result} move(s)." : "Unsolvable in less than 11 move(s).");
                 WriteLine(sw.Elapsed + "s");
             }
          
