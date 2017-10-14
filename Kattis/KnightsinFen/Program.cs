@@ -9,6 +9,7 @@ namespace KnightsinFen
     public static class Program
     {
         private static int _testcases;
+        private static Stopwatch sw;
 
         /// <summary>
         /// Defines the entry point of the application.
@@ -16,7 +17,7 @@ namespace KnightsinFen
         public static void Main()
         {
             var reader = new StreamReader("input.txt");
-            Stopwatch sw = Stopwatch.StartNew();
+            sw = Stopwatch.StartNew();
 
             try
             {
@@ -32,13 +33,9 @@ namespace KnightsinFen
                         boards[i] = line;
                     }
 
-                    int[] result = SplitBoard(boards);
+                    SplitBoard(boards);
 
-                    for (int i = 0; i < _testcases; i++)
-                    {
-                        WriteLine(result[i] <= 10 ? $"Solvable in {result[i]} move(s)." : "Unsolvable in less than 11 move(s).");
-                        WriteLine(sw.Elapsed + "ms");
-                    }
+
                 }
             }
             catch (Exception e)
@@ -52,7 +49,7 @@ namespace KnightsinFen
         /// </summary>
         /// <param name="board">The board.</param>
         /// <returns></returns>
-        private static int[] SplitBoard(string[] board)
+        private static void SplitBoard(string[] board)
         {
             int[] result = new int[_testcases];
 
@@ -60,8 +57,10 @@ namespace KnightsinFen
             {
                 string[] currentBoard = board.Skip(i * 5).Take(5).ToArray();
                 result[i] = Calculation.Solve(currentBoard);
+                WriteLine(result[i] <= 10 ? $"Solvable in {result[i]} move(s)." : "Unsolvable in less than 11 move(s).");
+                WriteLine(sw.Elapsed + "ms");
             }
-            return result;
+         
         }
     }
 }
